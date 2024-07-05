@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HodlInfo</title>
+    <link rel="shortcut icon" href="https://hodlinfo.com/favicon.ico">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/beb395a648.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="root" style="padding-bottom:47px">
+      <div class="App">
+        <div class="theme-dark" id="theme">
+          <div style="padding: 20px 30px 0px;">
+            <div class="row d-flex justify-content-between">
+              <div class="col-12 col-sm-7 col-md-5 col-lg-4">
+                <a href="/">
+                  <div class="padding-none col-12 col-sm-12 col-md-11 col-lg-11">
+                    <img src="https://hodlinfo.com/static/media/HODLINFO.8f78fc06.png" class="fiat-logo" style="padding: 10px;">
+                  </div>
+                </a>
+              </div>
+              <div class="padding-none d-flex justify-content-center w-50 col-12 col-sm-12 col-md-2 col-lg-4 flex-wrap">
+                <div class="m-1">
+                  <select class="btn btn-dark">
+                  <option>
+                    INR
+                  </option>
+                </select>
+                  <div aria-hidden="true" class="dropdown-menu">
+                    <a value="INR" class="dropdown-item" href="/BTC-INR">INR</a></div>
+                  </div>
+                  <div class="m-1">              
+                      <select class="header-button dropdown-toggle btn btn-dark" id="selectBase">
+                        <option selected="">BTC</option>
+                        <option>ETH</option>
+                        <option>USDT</option>
+                        <option>XRP</option>
+                        <option>TRX</option>
+                        <option>DASH</option>
+                        <option>ZEC</option>
+                        <option>XEM</option>
+                        <option>IOST</option>
+                        <option>WIN</option>
+                        <option>BTT</option>
+                        <option>WRX</option>
+                    </select>
+                  </div>  
+                  <div>
+                    <a target="_blank" href="https://wazirx.com/invite/sp7pvbt6?utm_source=finstreet&amp;utm_medium=affiliate&amp;utm_campaign=regnow-btn" type="button" class="header-button btn btn-dark m-1">BUY BTC</a>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-5 col-lg-4">
+                  <div class="d-inline-flex flex-wrap">
+                    <div class="progress-bar-wrapper">
+                      <svg class="CircularProgressbar " viewBox="0 0 100 100" data-test-id="CircularProgressbar">
+                        <path class="CircularProgressbar-trail" d="M 50,50 m 0,-46 a 46,46 0 1 1 0,92 a 46,46 0 1 1 0,-92" stroke-width="8" fill-opacity="0" style="stroke-dasharray: 289.027px, 289.027px; stroke-dashoffset: 0px;"></path>
+                        <path class="CircularProgressbar-path" d="M 50,50 m 0,-46 a 46,46 0 1 1 0,92 a 46,46 0 1 1 0,-92" stroke-width="8" fill-opacity="0" style="stroke-dasharray: 289.027px, 289.027px; stroke-dashoffset: 81.8908px;"></path>
+                        <text class="CircularProgressbar-text color-green" x="50" y="50" dominant-baseline="middle" id="countdown-text">51</text>
+                      </svg>
+                    </div>
+                    <div class="ml-auto">
+                      <a class="padding-none color-white" href="telegram.html">
+                      <button class="btn btn-info ml-3 mr-3">
+                        <div class="telegram">
+                              <i class="fa-brands fa-telegram fa-icon mr-3"></i>
+                              <p class="tele-text">Connect Telegram</p>
+                        </div>
+                      </button>
+                    </a>
+                    </div>
+                      <div class="margin-10 d-inline-block">
+                        <label class="switch" id="togglecheck">
+                            <input type="checkbox" checked>
+                            <span class="slider round"></span>
+                          </label>                      
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row" style="padding: 10px 0px;">
+                  <div class="text-center col-6 col-md-2 align-self-center">
+                    <div class="average-header-maintext color-green" id="mins">0.38 %</div>
+                  <div class="average-header-subHeading">5 Mins</div>
+                </div>
+                <div class="text-center col-6 col-md-2 align-self-center">
+                  <div class="average-header-maintext color-green" id="hours">0.78 %</div>
+                  <div class="average-header-subHeading">1 Hour</div>
+                </div>
+                <div class="col-12 col-md-4 align-self-center">
+                  <div class="text-center font-32 average-block">
+                    <div class="average-subText">
+                      <span class="subText-heading">Best Price to Trade</span>
+                    </div>
+                    <div class="average-heading" style="padding-bottom: 10px;" id="avgvalue">5253029</div>
+                    <div class="average-subText">Average <span id="baseId">BTC</span>/INR net price including commission</div>
+                  </div>
+                </div>
+                <div class="text-center col-6 col-md-2 align-self-center">
+                  <div class="average-header-maintext color-green">0.84 %</div>
+                  <div class="average-header-subHeading">1 Day</div>
+                </div>
+                <div class="text-center col-6 col-md-2 align-self-center">
+                  <div class="average-header-maintext color-green">5.89 %</div>
+                  <div class="average-header-subHeading">7 Days</div>
+                </div>
+              </div>
+              <div class="fiat-crypto-table table-responsive" style="margin: 0px auto;">
+                <table class="table table-borderless text-center">
+                  <thead>
+                    <tr>
+                      <th><h4><span class="pointer tablefont">#</span></h4></th>
+                      <th><h4><span class="pointer tablefont">Name</span></h4></th>
+                      <th><h4><span class="pointer tablefont">Last Traded Price</span></h4></th>
+                      <th><h4><span class="pointer tablefont">Buy / Sell Price</span></h4></th>
+                      <th><h4><span class="pointer tablefont">Difference</span></h4></th>
+                      <th><h4><span class="pointer tablefont">Savings</span></h4></th>
+                    </tr>
+                  </thead>
+                  <tbody id="dataTableBody">
+                    <!--table rows will be added from script.js file dinamically-->
+                  </tbody>
+                </table>
+                <div id="spinner">
+                  <div class="d-flex justify-content-center">
+                      <div class="spinner-border" role="status">
+                      </div>
+                  </div>
+              </div>
+            </div>
+              <div class="footer">
+                <div class="d-flex align-items-center text-center">
+                <div class="footer-text">Copyright © 2019</div>
+                <div class="footer-text">HodlInfo.com</div>
+                <div class="footer-text pointer" style="margin-left: auto;"><a href="mailto:support@hodlinfo.com" class="footer-text-link">Support</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="d-flex justify-content-center" style="border:solid 1px #191d28;background-color:#191d28;position:fixed;left:0;align-items:center;width:100vw;height:47px;bottom:0;z-index:8">
+        <button class="add-button btn btn-outline-info" style="display: block;">Add hodlinfo to home screen</button>
+      </div>
+      <script src="script.js"></script>
+    
+    </div></body>
+</html>
+
+
