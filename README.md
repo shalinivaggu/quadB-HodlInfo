@@ -1,6 +1,8 @@
 # quadB-HodlInfo
  a webpage similar to https://hodlinfo.com with real-time cryptocurrency data displayed using HTML, CSS, and a Node.js backend
 
+The deployed project, using HTML, CSS, JavaScript, Bootstrap, Node.js, and Express.js, can be accessed at https://quadb-hodlinfo.onrender.com/.
+
 creating this webpage hodlinfo.com by using HTML and CSS and backend using node js
 Fetching top 10 results from API(https://api.wazirx.com/api/v2/tickers) in my Nodejs express server and storing all top 10 results in the database by using PostgreSQL.
 
